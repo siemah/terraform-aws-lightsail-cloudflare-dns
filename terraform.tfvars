@@ -1,0 +1,6 @@
+availability_zone     = "lightsail-zone such as eu-west-3a"
+aws_region            = "aws global region such as eu-west-3"
+cloudflare_api_token  = "cf-api-toke-to-edit-zone"
+cloudflare_zone_id    = "no-required-unless setting an existing zone"
+cloudflare_account_id = "cf-account-id"
+domain                = "da-zzenz.com"
