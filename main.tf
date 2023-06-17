@@ -43,13 +43,13 @@ module "lightsail" {
   ]
 }
 
-# todo: create a new cloudflare dns zone if it is needed
+# create a new cloudflare dns zone if it is needed
 resource "cloudflare_zone" "example_com" {
   account_id = var.cloudflare_account_id
   zone       = var.domain
 }
 
-# todo: add A record to point a subdomain to the lightsail static ip
+# add A record to point a subdomain to the lightsail static ip
 resource "cloudflare_record" "app_a_record" {
   zone_id = cloudflare_zone.example_com.id
   proxied = true
